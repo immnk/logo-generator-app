@@ -1,0 +1,64 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+  --success: #74AC00;
+  --info: #0077CC;
+  --warning: #FFCC00;
+  --danger: #BF0052;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.card-img-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-body {
+  border: 1px solid;
+}
+
+.fal {
+  background: #fff;
+  width: 200px;
+  text-align: center;
+  height: 200px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}

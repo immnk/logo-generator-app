@@ -1,0 +1,118 @@
+<header>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+          <circle cx="12" cy="13" r="4"></circle>
+        </svg>
+        <strong>{{title}}</strong>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">What is Logo Generator?</h1>
+      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+      <p>
+        <a href="#" class="btn btn-primary my-2">Try now</a>
+        <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+      </p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row" id="rows">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-img-top">
+              <i class="fal fa-check fa-10x text-success"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Success</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.download(0)">Download</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <!-- <small class="text-muted">9 mins</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-img-top">
+              <i class="fal fa-exclamation-triangle fa-10x text-warning"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Warning</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.download(1)">Download</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <!-- <small class="text-muted">9 mins</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-img-top">
+              <i class="fal fa-times fa-10x text-danger"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Error</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.download(2)">Download</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <!-- <small class="text-muted">9 mins</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-img-top">
+              <i class="fal fa-info-circle fa-10x text-info"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Info</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.download(3)">Download</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <!-- <small class="text-muted">9 mins</small> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>{{title}} is property of &copy; SGX!</p>
+    <!-- <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p> -->
+  </div>
+</footer>
