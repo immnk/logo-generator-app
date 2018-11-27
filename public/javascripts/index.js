@@ -7,7 +7,7 @@ var LogoFactory = (function() {
   function download(index) {
     console.log("download called at:", index);
     var col = rows.getElementsByClassName("col-md-4")[index];
-    domtoimage.toJpeg(col.getElementsByClassName("fal")[0], {
+    domtoimage.toJpeg(col.getElementsByClassName("icon")[0], {
         quality: 0.95
       })
       .then(function(dataUrl) {
@@ -18,9 +18,21 @@ var LogoFactory = (function() {
       });
   }
 
+  function hideLogo(index) {
+    console.log("hide logo called at: ", index);
+    var col = rows.getElementsByClassName("col-md-4")[index];
+    var logoElement = col.getElementsByClassName("logo")[0];
+    var display = logoElement.style.display;
+    if(display == "" || display == "block")
+      logoElement.style.display = "none";
+    else
+      logoElement.style.display = "block";
+  }
+
   return {
     init: init,
-    download: download
+    download: download,
+    hideLogo: hideLogo
   }
 })();
 

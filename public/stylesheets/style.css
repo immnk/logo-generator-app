@@ -43,7 +43,8 @@
   border: 1px solid;
 }
 
-.fal {
+.icon {
+  position: relative;
   background: #fff;
   width: 200px;
   text-align: center;
@@ -52,6 +53,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.logo_checkbox_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 12px 0 0;
+}
+
+.logo_checkbox_wrapper label {
+  margin: 0 0 0 5px;
 }
 
 footer {
