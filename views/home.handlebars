@@ -17,11 +17,26 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1 class="jumbotron-heading">What is Logo Generator?</h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+      <p class="lead text-muted">Logo Generator is an app that creates icons using Fontawesome Pro  to be used as desktop notification image. You can view, edit, preview and download icons individually to be used in your application.</p>
       <p>
-        <a href="#" class="btn btn-primary my-2">Try now</a>
+        <a href="#" class="btn btn-primary my-2" onclick="LogoFactory.downloadAll()">Download All</a>
         <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
       </p>
+      <div class="notification_wrapper">
+        <img id="image_holder" src="" alt="loading..." />
+        <div class="notification_content">
+          <div class="buttons_wrapper">
+            <button>
+              <i class="fas fa-cog"></i>
+            </button>
+            <button>
+              <i class="fal fa-times"></i>
+            </button>
+          </div>
+          <h6>Notification title</h6>
+          <p style="font-size: 0.6rem">Lorem Ipsum is simply dummy text of the printing and ...</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -42,7 +57,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.download(0)">Download</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.preview(0)">Preview</button>
                 </div>
               </div>
               <div class="logo_checkbox_wrapper">
@@ -66,7 +81,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.download(1)">Download</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.preview(1)">Preview</button>
                 </div>
                 <!-- <small class="text-muted">9 mins</small> -->
               </div>
@@ -91,7 +106,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.download(2)">Download</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.preview(2)">Preview</button>
                 </div>
                 <!-- <small class="text-muted">9 mins</small> -->
               </div>
@@ -116,7 +131,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.download(3)">Download</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="LogoFactory.preview(3)">Preview</button>
                 </div>
                 <!-- <small class="text-muted">9 mins</small> -->
               </div>
