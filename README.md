@@ -1,3 +1,3 @@
-#Logo Generator
+## Logo Generator
 
 Generates logo
