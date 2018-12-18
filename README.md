@@ -1,6 +1,6 @@
 # Logo Generator
 
-**Logo Generator** is an application that *generates logo*
+**Logo Generator** is an application that *generates logo*. View the application hosted at [Logo Generator](https://logo-generator-app.herokuapp.com/)
 
 ## Installation instructions
 
